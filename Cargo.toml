@@ -1,0 +1,15 @@
+[package]
+name = "lapacke-static"
+version = "0.1.0"
+authors = ["Andrew Straw <strawman@astraw.com>"]
+description = "Statically compiled LAPACKE library"
+repository = "https://github.com/astraw/lapacke-static"
+build = "build.rs"
+license = "BSD-3-Clause"
+keywords = ["linear-algebra"]
+categories = ["science", "external-ffi-bindings"]
+
+[build-dependencies]
+gcc={version="0.3",features=["parallel"]}
+glob="0.2"
+tempdir="0.3"
